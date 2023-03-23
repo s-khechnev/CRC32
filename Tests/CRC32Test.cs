@@ -36,7 +36,7 @@ public class CRC32Test
 
         var actualCheckSum = _crc.GetCheckSum(_byteMessage1);
 
-        Assert.IsTrue(actualCheckSum.SequenceEqual(actualCheckSum));
+        Assert.IsTrue(actualCheckSum.SequenceEqual(expectedCheckSum));
     }
 
     [Test]
